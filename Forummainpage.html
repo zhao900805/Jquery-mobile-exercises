@@ -1,0 +1,263 @@
+<!DOCTYPE　html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+<!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- Include the jQuery library -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css.css">
+<link rel="import" href="./info.html">
+<Style>
+*{
+    font-size: 20%;
+}
+</style>
+</head>
+<body>
+
+<!--newestPostPage-->
+
+    <div data-role="page" id="newestPostPage">
+        <div data-role="header" data-position="fixed">
+            <div data-role="navbar" data-iconpos="left" style="margin-top:-1%;">
+               <a href="#" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all ui-btn-right">No text</a> 
+               <a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
+               <a href="#" class="ui-btn ui-icon-edit ui-btn-icon-notext ui-corner-all" style="margin-left:72%">No text</a> 
+            </div>
+            <img src="..." alt="main" style="width:10%">
+            <span>page 1</span>
+            <p>a small description will be here</p> 
+            <a href="#" class="ui-btn ui-btn-right ui-btn-inline" style="margin-top:15%">Focus</a>
+        </div>
+        <div data-role="content" class="ui-content" data-mini="true">
+            <div class="ui-grid-a" style="margin-top:-4%;margin-bottom:-4%;margin-left:0%;" data-mini="true">
+                <div class="ui-block-a">
+                    <a href="./frame.html" class="ui-btn-inline ui-btn" style=" width:50%;height:10px;margin-left:40%;font-size:20%" id="newestPostBtn">newest post</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="./recommand.html" class="ui-btn-inline ui-btn" style="width:50%;height:10px;margin-right:40%;font-size:20%;color:red;" id="newestCommentBtn">newest comment</a>
+                </div>
+                <hr /><br />
+            </div>
+            <ul data-role="listview">
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+
+        </div>
+        <div data-role="footer" data-position="fixed">
+            footer
+        </div>
+    </div>
+
+<!--newestCommentPage-->
+<div data-role="page" id="zcc">
+    <div data-role="header" data-position="fixed">
+        header
+    </div>
+    <div data-role="content">
+        content
+    </div>
+    <div data-role="footer" data-position="fixed">
+        footer
+    </div>
+</div>
+
+ <div data-role="page" id="newestCommentPage">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <div data-role="navbar" data-iconpos="left" style="margin-top:-1%;">
+               <a href="#" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all ui-btn-right">No text</a> 
+               <a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all">No text</a>
+               <a href="#" class="ui-btn ui-icon-edit ui-btn-icon-notext ui-corner-all" style="margin-left:72%">No text</a> 
+            </div>
+            <img src="..." alt="main" style="width:10%">
+            <span>page 1</span>
+            <p>a small description will be here</p> 
+            <a href="#" class="ui-btn ui-btn-right ui-btn-inline" style="margin-top:15%">Focus</a>
+        </div>
+        <div data-role="content" class="ui-content" data-mini="true">
+            <div class="ui-grid-a" style="margin-top:-4%;margin-bottom:-4%;margin-left:0%;" data-mini="true">
+                <div class="ui-block-a">
+                    <a href="./frame.html" class="ui-btn-inline ui-btn ui-mini" style=" width:50%;height:10px;margin-left:40%;font-size:20%;color:red;" id="newestPostBtn">newest post</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="./recommand.html" class="ui-btn-inline ui-btn ui-mini" style="width:50%;height:10px;margin-right:40%;font-size:20%;" id="newestCommentBtn">newest comment</a>
+                </div>
+                <hr /><br />
+            </div>
+            <ul data-role="listview">
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+                <li>
+                    <p>post time is here...</p>
+                    <span>posted time</span>
+                    <span class="writterSettings">writter</span>
+                    <span href="#" class="ui-btn ui-icon-comment ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini commentSettings">No text</span>
+                </li>
+
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            footer
+        </div>
+    </div>
+
+
+
+</body>
+<script>
+
+$(document).on("ready",function(){
+    console.log("ready!");
+    $("#frameBtn").css("color","red");
+});
+
+ $(document).on('swiperight', function(){
+     $.mobile.changePage("#newestCommentPage"); 
+     console.log("this is working!");
+     if($("#newestPostBtn").css("color")=="red"){
+         $(this).css("Color","black");
+         console.log("cancelled!");
+     }
+     if($("#newestCommentBtn").css("color")!="red"){
+         $(this).css("Color","red");
+         console.log("added!");
+     }
+ });
+ $(document).on('swipeleft', function(){
+     $.mobile.changePage("#newestPostPage"); 
+     console.log("this is working too!");
+ });
+
+ /*$(document).on("swipeup",function(){
+     console.log("swipeup!");
+ });
+ $(document).on("swipedown",function(){
+     console.log("swipedown!");
+ });*/
+
+ $("li").on("tap",function(){
+     console.log("tap!");
+     
+ });
+</script>
+</html>
