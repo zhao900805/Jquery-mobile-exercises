@@ -1,0 +1,993 @@
+<!DOCTYPE　html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+<!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- Include the jQuery library -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css.css">
+<link rel="import" href="./info.html">
+<Style>
+
+</style>
+</head>
+<body>
+    
+<!--startPage-->
+<div data-role="page" id="startPage" data-theme="b" data-position="fixed">
+    <div data-role="header">
+        <h1>Welcome</h1>
+         <a href="#pageone" data-role="button" class="ui-btn-right" data-transition="fade">FirstPage</a>
+    </div>
+    <div data-role="content" data-theme="a">
+        <img src="" alt="photo" class="photoSettings" >
+    </div>
+    <div data-role="footer" data-theme="b"  data-position="fixed">
+        <div data-role="navbar" data-iconpos="left">
+           <ul>
+               <li><a href="" data-icon="home">home</a></li>
+               <li><a href="" data-icon="info">info</a></li>
+               <li><a href="" data-icon="search">search</a></li>
+           </ul>
+       </div>
+        <h2>footer</h2>
+    </div>
+</div>
+<!--firstpage-->
+<div data-role="page" id="pageone" data-theme="a">
+    <div data-role ="header" data-theme="b"> 
+       <h1 class="ui-title" role="heading">First Page</h1>
+       <div data-role="navbar" data-iconpos="left">
+           <ul>
+               <li><a href="" data-icon="home">home</a></li>
+               <li><a href="" data-icon="info">info</a></li>
+               <li><a href="" data-icon="search">search</a></li>
+           </ul>
+       </div>
+    </div>
+    <div data-role="content" class="ui-content" data-theme="e">
+        <!--first row-->
+        <div class="ui-grid-a">
+            <div class="ui-block-a" data-role="controlgroup">
+                <a href="#pagetwo" data-transition="fade" data-role="button" ><img src= "">Second page</a>
+                <div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-mini="true">
+                    <h4>more</h4>
+                    <p>more</p>
+                </div>
+            </div>
+            <div class="ui-block-b">
+                <a href="#pagetwo" data-transition="fade" data-role="button"><img src= "">Second page</a>
+                <div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-mini="true">
+                    <h4>more</h4>
+                    <p>more</p>
+                </div>
+            </div>
+       </div>
+       <!--second row-->
+       <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a href="#pagetwo" data-transition="fade" data-role="button" ><img src= "">Second page</a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#pagetwo" data-transition="fade" data-role="button"><img src= "">Second page</a>
+            </div>
+       </div>
+       <!--third row-->
+       <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a href="#pagetwo" data-transition="fade" data-role="button"><img src= "">Second page</a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#pagetwo" data-transition="fade" data-role="button" ><img src= "">Second page</a>
+            </div>
+       </div>
+    </div>
+    <div data-role="footer" data-theme="b" data-position="fixed">
+        <div data-role="navbar" data-iconpos="left">
+           <ul>
+               <li><a href="" data-icon="home">home</a></li>
+               <li><a href="" data-icon="info">info</a></li>
+               <li><a href="" data-icon="search">search</a></li>
+               <li><a href="" data-icon="star">star</a></li>
+               <li><a href="" data-icon="user">user</a></li>
+           </ul>
+       </div>
+        <h1>Footer</h1>
+    </div>
+</div>
+
+<!--pagetwo-->
+<div data-role="page" id="pagetwo" data-position="fixed">
+    <div data-role ="header" data-theme="a"> 
+       <h1 class="ui-title" role="heading">Page Two</h1>
+       <div data-role="navbar" data-iconpos="left">
+           <ul>
+               <li><a href="#forum" data-icon="home">Forum</a></li>
+               <li><a href="#newsPage" data-icon="info">News</a></li>
+               <li><a href="#searchDialog" data-icon="search" data-rel="dialog" data-transition="fade">search</a></li>
+               <li><a href="#starPage" data-icon="star">star</a></li>
+               <li><a href="" data-icon="user">user</a></li>
+           </ul>
+       </div>
+          <a href="#pageone" data-role="button" data-icon="gear" class="ui-btn-left">Back</a>
+          <a href="#game" data-role="button" data-icon="grid" class="ui-btn-right">Next</a>
+    </div>
+    <div data-role="content" class="ui-content">
+           <img src="" class="ImgSettings">
+           <ul data-role="listview" data-inset="true">
+               <li><a href="#li-1" data-rel="dialog" data-transition="pop">name:</a></li>
+               <li><a href="#li-2" data-rel="dialog" data-transition="pop">age:</a></li>
+               <li><a href="#li-3" data-rel="dialog" data-transition="pop">male:</a></li>
+               <li><a href="#li-4" data-rel="dialog" data-transition="pop">data:</a></li>
+               <li><a href="#li-5" data-rel="dialog" data-transition="pop">information:</a></li>
+           </ul>
+    </div>
+    <div data-role="footer" data-theme="a" data-position="fixed">
+        <div data-role="navbar" data-iconpos="left">
+           <ul>
+               <li><a href="#startPage" data-icon="home">home</a></li>
+               <li><a href="" data-icon="info">info</a></li>
+               <li><a href="" data-icon="search">search</a></li>
+               <li><a href="" data-icon="star">star</a></li>
+               <li><a href="" data-icon="user">user</a></li>
+           </ul>
+       </div>
+        <h1>Footer</h1>
+    </div>
+</div>
+
+<!--starPage-->
+<div data-role="page" id="starPage">
+    <div data-role="head">
+    </div>
+    <div data-role="content" id="starPageContent">
+    </div>
+    <div data-role="footer">
+    </div>
+</div>
+
+<!--searchDialog-->
+<div data-role="page" id="searchDialog">
+    <div data-role="head">
+        <h1 class="newsTitle">searchPage</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true" id="searchListView">
+            <li><a href="">Search FreindList</a></li>
+            <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search FreindList" data-inset="true">
+                <li>
+                    <a href="">a</a>
+                </li>
+                <li>
+                    <a href="">b</a>
+                </li>
+            </ul>
+            <li><a href="">Search Viewd News</a></li>
+            <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search Viewd News" data-inset="true">
+                <li>
+                    <a href="">a</a>
+                </li>
+                <li>
+                    <a href="">b</a>
+                </li>
+            </ul>
+            <li><a href="">Search Teams</a></li>
+            <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search Teams" data-inset="true">
+                <li>
+                    <a href="">a</a>
+                </li>
+                <li>
+                    <a href="">b</a>
+                </li>
+            </ul>
+            <li><a href="">Search Players</a></li>
+            <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search Players" data-inset="true">
+                <li>
+                    <a href="">a</a>
+                </li>
+                <li>
+                    <a href="">b</a>
+                </li>
+            </ul>
+            <li><a href="">Search Message</a></li>
+            <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search Message" data-inset="true">
+                <li>
+                    <a href="">a</a>
+                </li>
+                <li>
+                    <a href="">b</a>
+                </li>
+            </ul>
+            <li><a href="">Search Keywords</a></li>
+            <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search Keywords" data-inset="true">
+                <li>
+                    <a href="">a</a>
+                </li>
+                <li>
+                    <a href="">b</a>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <div data-role="footer">
+        <a href="#" data-role="button" style="margin-top:10px;margin-left:400px;" data-rel="back">Back</a>
+    </div>
+</div>
+
+<!--li-1-->
+<div data-role="page" id="li-1">
+    <div data-role="content" class="dialogSettings" data-inset="true">
+        <h1 class="h1-align">name</h1>
+        <ul data-role="listview" data-inset="true">
+            <li>list-1</li>
+            <li>list-1</li>
+            <li>list-1</li>
+            <li>list-1</li>
+        </ul>
+        <a href="#" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+    </div>
+</div>
+
+<!--li-2-->
+<div data-role="page" id="li-2">
+    <div data-role="content" class="dialogSettings" data-inset="true">
+        <h1 class="h1-align">age</h1>
+        <ul data-role="listview" data-inset="true">
+            <li>list-2</li>
+            <li>list-2</li>
+            <li>list-2</li>
+            <li>list-2</li>
+        </ul>
+        <a href="#" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+    </div>
+</div>
+
+<!--li-3-->
+<div data-role="page" id="li-3">
+    <div data-role="content" class="dialogSettings" data-inset="true">
+        <h1 class="h1-align">male</h1>
+        <ul data-role="listview" data-inset="true">
+            <li>list-3</li>
+            <li>list-3</li>
+            <li>list-3</li>
+            <li>list-3</li>
+        </ul>
+        <a href="#" data-role="button" class="backBtnSettings" data-rel="back"Back</a>
+    </div>
+</div>
+
+<!--li-4-->
+<div data-role="page" id="li-4">
+    <div data-role="content" class="dialogSettings" data-inset="true">
+        <h1 class="h1-align">data</h1>
+        <ul data-role="listview" data-inset="true">
+            <li>list-3</li>
+            <li>list-3</li>
+            <li>list-3</li>
+            <li>list-3</li>
+        </ul>
+        <a href="#" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+    </div>
+</div>
+
+<!--li-5-->
+<div data-role="page" id="li-5">
+    <div data-role="content" class="dialogSettings" data-inset="true">
+        <h1 class="h1-align">information</h1>
+        <ul data-role="listview" data-inset="true">
+            <li>list-3</li>
+            <li>list-3</li>
+            <li>list-3</li>
+            <li>list-3</li>
+        </ul>
+        <a href="#" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+    </div>
+</div>
+
+<!--game-->
+<div data-role="page" id="game">
+    <div data-role="header" data-theme="b" data-position="fixed">
+        <a href="#panelGame-1" class="ui-btn ui-icon-back ui-btn-left ui-btn-icon-left ui-btn-icon-notext ui-shadow">home</a>
+        <h1>Game</h1>
+        <div data-role="navbar" data-iconpos="left">
+           <ul>
+               <li><a href="" data-icon="home">home</a></li>
+               <li><a href="" data-icon="info">info</a></li>
+               <li><a href="" data-icon="search">search</a></li>
+               <li><a href="" data-icon="star">star</a></li>
+               <li><a href="#userPage" data-icon="user">user</a></li>
+           </ul>
+       </div>
+    </div>
+    <div data-role="content" data-theme="a">
+
+        <!--panel for home btn-->
+        <div data-role="panel" id="panelGame-1" data-display="overlay" data-position="left">
+            <a href="" data-role="button" data-inline="true" class="ui-btn-right" style="margin-top:550px;">Close</a>
+        </div>
+
+        <ul data-role="listview" data-inset="false">
+            <!--yestetday-->
+            <li style="text-align:center;background-color:#EFFBF8;height:40px;" >Yesterday</li>
+            <li>
+                <a href="#yesterday-1" data-rel="dialog" data-transition="pop">
+                     <img src="" alt="img" class="gameImgSettings">
+                     <h1>a</h1>
+                     <p>aa</p>
+                     <a data-icon="star" data-iconpos="notext" data-theme="e" class="gameIconSettings" data-rel="dialog" data-transition="pop" href="#star-1">button</a>
+                </a>
+            </li>
+            <li>
+                <a href="#yesterday-2" data-rel="dialog" data-transition="pop">
+                     <img src="" alt="img" class="gameImgSettings">
+                     <h1>a</h1>
+                     <p>aa</p>
+                     <a data-icon="star" data-iconpos="notext" data-theme="e" class="gameIconSettings" data-rel="dialog" data-transition="pop" href="#star-1">button</a>
+                </a>
+            </li>
+            <li>
+                <a href="#yesterday-3" data-rel="dialog" data-transition="pop">
+                     <img src="" alt="img" class="gameImgSettings">
+                     <h1>a</h1>
+                     <p>aa</p>
+                     <a data-icon="star" data-iconpos="notext" data-theme="e" class="gameIconSettings" data-rel="dialog" data-transition="pop" href="#star-1">button</a>
+                </a>
+            </li>
+            <!--today-->
+            <li style="text-align:center;background-color:#EFFBF8;height:40px;">Today</li>
+            <li>
+                <a href="#today-1" data-rel="dialog" data-transition="pop">
+                     <img src="" alt="img" class="gameImgSettings">
+                     <h1>a</h1>
+                     <p>aa</p>
+                     <a data-icon="star" data-iconpos="notext" data-theme="e" class="gameIconSettings" data-rel="dialog" data-transition="pop" href="#star-1">button</a>
+                </a>
+            </li>
+            <li>
+                <a href="#today-2" data-rel="dialog" data-transition="pop">
+                     <img src="" alt="img" class="gameImgSettings">
+                     <h1>a</h1>
+                     <p>aa</p>
+                     <a data-icon="star" data-iconpos="notext" data-theme="e" class="gameIconSettings" data-rel="dialog" data-transition="pop" href="#star-1">button</a>
+                </a>
+            </li>
+            <li>
+                <a href="#today-3" data-rel="dialog" data-transition="pop">
+                     <img src="" alt="img" class="gameImgSettings">
+                     <h1>a</h1>
+                     <p>aa</p>
+                     <a data-icon="star" data-iconpos="notext" data-theme="e" class="gameIconSettings" data-rel="dialog" data-transition="pop" href="#star-1">button</a>
+                </a>
+            </li>
+            <!--tomorrow-->
+            <li style="text-align:center;background-color:#EFFBF8;height:40px;">Tomorrow</li>
+            <li>
+                <a href="#tomorrow-1" data-rel="dialog" data-transition="pop">
+                     <img src="" alt="img" class="gameImgSettings">
+                     <h1>a</h1>
+                     <p>aa</p>
+                     <a data-icon="star" data-iconpos="notext" data-theme="e" class="gameIconSettings" data-rel="dialog" data-transition="pop" href="#star-1">button</a>
+                </a>
+            </li>
+            <li>
+                <a href="#tomorrow-2" data-rel="dialog" data-transition="pop">
+                     <img src="" alt="img" class="gameImgSettings">
+                     <h1>a</h1>
+                     <p>aa</p>
+                     <a data-icon="star" data-iconpos="notext" data-theme="e" class="gameIconSettings" data-rel="dialog" data-transition="pop" href="#star-1">button</a>
+                </a>
+            </li>
+            <li>
+                <a href="#tomorrow-3" data-rel="dialog" data-transition="pop">
+                     <img src="" alt="img" class="gameImgSettings">
+                     <h1>a</h1>
+                     <p>aa</p>
+                     <a data-icon="star" data-iconpos="notext" data-theme="e" class="gameIconSettings" data-rel="dialog" data-transition="pop" href="#star-1">button</a>
+                </a>
+            </li>
+            <!--more-->
+            <li style="text-align:center;background-color:#EFFBF8;height:40px;">More</li>
+            <li>
+                <a href="#more-1" data-rel="dialog" data-transition="pop">
+                     <img src="" alt="img" class="gameImgSettings">
+                     <h1>a</h1>
+                     <p>aa</p>
+                     <a data-icon="star" data-iconpos="notext" data-theme="e" class="gameIconSettings" data-rel="dialog" data-transition="pop" href="#star-1">button</a>
+                </a>
+            </li>
+            <li>
+                <a href="#more-2" data-rel="dialog" data-transition="pop">
+                     <img src="" alt="img" class="gameImgSettings">
+                     <h1>a</h1>
+                     <p>aa</p>
+                     <a data-icon="star" data-iconpos="notext" data-theme="e" class="gameIconSettings" data-rel="dialog" data-transition="pop" href="#star-1">button</a>
+                </a>
+            </li>
+            <li>
+                <a href="#more-3" data-rel="dialog" data-transition="pop">
+                     <img src="" alt="img" class="gameImgSettings">
+                     <h1>a</h1>
+                     <p>aa</p>
+                     <a data-icon="star" data-iconpos="notext" data-theme="e" class="gameIconSettings" data-rel="dialog" data-transition="pop" href="#star-1">button</a>
+                </a>
+            </li>
+        </ul>
+            
+    </div>
+    <div data-role="footer" data-theme="b" data-position="fixed">
+        <div data-role="navbar" data-iconpos="left">
+           <ul>
+               <li><a href="" data-icon="home">home</a></li>
+               <li><a href="" data-icon="info">info</a></li>
+               <li><a href="" data-icon="search">search</a></li>
+               <li><a href="" data-icon="star">star</a></li>
+               <li><a href="" data-icon="user">user</a></li>
+           </ul>
+        </div>
+        <h1>footer</h1>
+    </div>
+</div>
+
+<!--yesterday-1-->
+    <div data-role="page" id="yesterday-1">
+        <div data-role="content" class="dialogSettings" data-inset="true">
+            <h1 class="h1-align">name</h1>
+            <ul data-role="listview" data-inset="true">
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+           </ul>
+           <a href="#" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+        </div>
+    </div>
+
+<!--yesterday-2-->
+    <div data-role="page" id="yesterday-2">
+        <div data-role="content" class="dialogSettings" data-inset="true">
+            <h1 class="h1-align">name</h1>
+            <ul data-role="listview" data-inset="true">
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+           </ul>
+           <a href="#" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+        </div>
+    </div>
+<!--yesterday-3-->
+    <div data-role="page" id="yesterday-3">
+        <div data-role="content" class="dialogSettings" data-inset="true">
+            <h1 class="h1-align">name</h1>
+            <ul data-role="listview" data-inset="true">
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+           </ul>
+        <a href="#" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+        </div>
+    </div>
+<!--today-1-->
+    <div data-role="page" id="today-1">
+        <div data-role="content" class="dialogSettings" data-inset="true">
+            <h1 class="h1-align">name</h1>
+            <ul data-role="listview" data-inset="true">
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+           </ul>
+        <a href="#" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+        </div>
+    </div>
+<!--today-2-->
+    <div data-role="page" id="today-2">
+        <div data-role="content" class="dialogSettings" data-inset="true">
+            <h1 class="h1-align">name</h1>
+            <ul data-role="listview" data-inset="true">
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+           </ul>
+        <a href="#" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+        </div>
+    </div>
+<!--today-3-->
+    <div data-role="page" id="today-3">
+        <div data-role="content" class="dialogSettings" data-inset="true">
+            <h1 class="h1-align">name</h1>
+            <ul data-role="listview" data-inset="true">
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+           </ul>
+        <a href="#" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+        </div>
+    </div>
+<!--tomorrow-1-->
+    <div data-role="page" id="tomorrow-1">
+        <div data-role="content" class="dialogSettings" data-inset="true">
+            <h1 class="h1-align">name</h1>
+            <ul data-role="listview" data-inset="true">
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+           </ul>
+        <a href="#" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+        </div>
+    </div>
+<!--tomorrow-2-->
+    <div data-role="page" id="tomorrow-2">
+        <div data-role="content" class="dialogSettings" data-inset="true">
+            <h1 class="h1-align">name</h1>
+            <ul data-role="listview" data-inset="true">
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+           </ul>
+        <a href="#" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+        </div> 
+    </div>
+<!--tomorrow-3-->
+    <div data-role="page" id="tomorrow-3">
+        <div data-role="content" class="dialogSettings" data-inset="true">
+            <h1 class="h1-align">name</h1>
+            <ul data-role="listview" data-inset="true">
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+           </ul>
+        <a href="#" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+        </div>
+    </div>
+<!--more-1-->
+    <div data-role="page" id="more-1">
+        <div data-role="content" class="dialogSettings" data-inset="true">
+            <h1 class="h1-align">name</h1>
+            <ul data-role="listview" data-inset="true">
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+           </ul>
+        <a href="#" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+        </div>
+    </div>
+<!--more-2-->
+    <div data-role="page" id="more-2">
+        <div data-role="content" class="dialogSettings" data-inset="true">
+            <h1 class="h1-align">name</h1>
+            <ul data-role="listview" data-inset="true">
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+           </ul>
+        <a href="#" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+        </div>
+    </div>
+<!--more-3-->
+    <div data-role="page" id="more-3">
+        <div data-role="content" class="dialogSettings" data-inset="true">
+            <h1 class="h1-align">name</h1>
+            <ul data-role="listview" data-inset="true">
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+                <li>list-1</li>
+           </ul>
+        <a href="#" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+        </div>
+    </div>
+<!--star-1-->
+<div data-role="page" id="star-1">
+        <div data-role="content" class="dialogSettings" data-inset="true">
+            <h1 class="h1-align">your have saved the star!</h1>
+            <a href="#saveDialog" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+        </div>
+</div>
+
+<!--userPage-->
+<div data-role="page" id="userPage">
+    <div data-role="header" data-min="true" data-theme="b" data-postion="fixed">
+        <h1>User Page</h1>
+        <a href=""  class="ui-btn ui-icon-back ui-icon-notext ui-btn-inline" data-mini="true" data-rel="back" data-theme="a">Back</a>
+        <a href="#saveDialog"  class="ui-btn ui-icon-back ui-icon-notext ui-btn-inline ui-btn-icon-right" data-mini="true" data-theme="a" data-rel="dialog" data-transition="pop">Save</a>
+    </div>
+    <div data-role="content">
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <div class="ui-bar ui-bar-a ui-corner-all" style="height:100%;width:100%">
+                    <a href="#popPhoto" data-rel="popup" data-transition="fade"><img src="" alt="photo"></a>
+               </div>
+               <div data-role="popup" id="popPhoto" class="popPhotoSettsings">
+                   <a href="" data-rel="back" class="ui-btn ui-corner-all ui-btn-a ui-shadow ui-icon-delete ui-icon-notext ui-btn-right">Close</a>
+                   <img src="" alt="large photo">
+               </div>
+           </div>
+           <div class="ui-block-b">
+               <ul class="listview">
+                   <li>A</li>
+                   <li>B</li>
+                   <li>C</li>
+               </ul>
+           </div>
+       </div>
+       <hr />
+       <div class="ui-grid-a">
+           <div class="ui-block-a">
+               <h3><label for="select-team">Choose the favourite team:</h3>
+               <select data-icon ="grid" data-iconpos="left" id="select-team">
+                   <optgroup label="east">
+                       <option value="a">A</option>
+                       <option value="b">B</option>
+                       <option value="c">C</option>
+                   <optgroup>
+                   <optgroup label="west">
+                       <option value="d">D</option>
+                       <option value="e">E</option>
+                       <option value="f">F</option>
+                   </optgroup>
+                </select>
+            </div>
+            <div class="ui-block-b">
+                <h3><label for="select-team">Choose the favourite player:</h3>
+               <select data-icon ="grid" data-iconpos="left" id="select-team">
+                   <optgroup label="east">
+                       <option value="a">A</option>
+                       <option value="b">B</option>
+                       <option value="c">C</option>
+                   <optgroup>
+                   <optgroup label="west">
+                       <option value="d">D</option>
+                       <option value="e">E</option>
+                       <option value="f">F</option>
+                   </optgroup>
+                </select>
+            </div>
+      </div>
+      <hr />
+      <div class="ui-bar ui-corner-all">
+          <h1><label for="selfDescription">Self Description</label></h1>
+          <textarea row="60" cols="60" id="selfDescription" placeholder="please introduce youself...">
+          </textarea>
+      </div>
+
+    </div>
+    <div data-role="footer" data-theme="b" data-position="fixed">
+        <div data-role="navbar" data-iconpos="left">
+           <ul>
+               <li><a href="" data-icon="home">home</a></li>
+               <li><a href="" data-icon="info">info</a></li>
+               <li><a href="" data-icon="search">search</a></li>
+               <li><a href="" data-icon="star">star</a></li>
+               <li><a href="" data-icon="user">user</a></li>
+           </ul>
+        </div>
+    </div>
+</div>
+
+<!--saveDialog-->
+<div data-role="page" id="saveDialog">
+        <div data-role="content" class="dialogSettings" data-inset="true">
+            <h1 class="h1-align">your profile has been saved!</h1>
+        <a href="#" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+        </div>
+</div>
+
+<!--newsPage-->
+<div data-role="page" id="newsPage">
+    <div data-role="header" data-position="fixed" data-theme="a">
+        <h1>News page</h1>
+        <a href="#pagetwo" date-rel="back" class="ui-btn ui-icon-back ui-btn-left ui-btn-icon-notext ui-shadow ui-corner-all" data-mini="true" data-theme="a">Back</a>
+        <div data-role="navbar" data-iconpos="left" data-mini="true" style="margin-top:-30px;">
+           <div class="ui-grid-b">
+                <li class="ui-block-a">
+                    <h6 style="margin-bottom:-8px;margin-left:10px;">date</h6>
+                    <Select id="datePicker">
+                        <option value="Yesterday">Yesterday</option>
+                        <option value="Today">Today</option>
+                        <option value="Tomorrow">Tomorrow</option>
+                   </select>
+               </li>
+                <li class="ui-block-b">
+                    <h6 style="margin-bottom:-8px;margin-left:10px;">History</h6>
+                    <Select id="historyPicker">
+                        <option>Yesterday</option>
+                        <option>Today</option>
+                        <option>Tomorrow</option>
+                    </select>
+               </li>
+                <li class="ui-block-c">
+                    <h6 style="margin-bottom:-8px;margin-left:10px;">likes</h6>
+                    <Select id="likesPicker">
+                        <option>Yesterday</option>
+                        <option>Today</option>
+                        <option>Tomorrow</option>
+                    </select>
+               </li>
+           </div>
+       </div>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-divider-theme="b">
+            <!--Yesterday-->
+            <li data-role="list-divider" class="yesterday">Yesterday</li>
+            <li class="nba yesterday">
+                <a href="#newsNba" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">nba1</a>
+            </li>
+            <li class="nba yesterday">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">nba2</a>
+            </li>
+            <li class="nba yesterday">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">nba3</a>
+            </li>
+            <li class="soccer yesterday">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">soccer1</a>
+            </li>
+            <li class="soccer yesterday">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">soccer2</a>
+            </li>
+            <li class="soccer yesterday">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">soccer3</a>
+            </li>
+            <li class="other yesterday">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">others1</a>
+            </li>
+            <li class="other yesterday">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">others2</a>
+            </li>
+            <li class="other yesterday">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">others3</a>
+            </li>
+            <li class="game yesterday">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">E-game1</a>
+            </li>
+            <li class="game yesterday">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">E-game2</a>
+            </li>
+            <li class="game yesterday">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">E-game3</a>
+            </li>
+            <!--today-->
+            <li data-role="list-divider" class="today">Today</li>
+            <li class="nba today">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">nba1</a>
+            </li>
+            <li class="nba today">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">nba2</a>
+            </li>
+            <li class="nba today">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">nba3</a>
+            </li>
+            <li class="soccer today">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">soccer1</a>
+            </li>
+            <li class="soccer today">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">soccer2</a>
+            </li>
+            <li class="soccer today">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">soccer3</a>
+            </li>
+            <li class="other today">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">others1</a>
+            </li>
+            <li class="other today">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">others2</a>
+            </li>
+            <li class="other today">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">others3</a>
+            </li>
+            <li class="game today">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">E-game1</a>
+            </li>
+            <li class="game today">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">E-game2</a>
+            </li>
+            <li class="game today">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">E-game3</a>
+            </li>
+            <!--tomorrow-->
+            <li data-role="list-divider" class="tomorrow">Tomorrow</li>
+            <li class="nba tomorrow">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">nba1</a>
+            </li>
+            <li class="nba tomorrow">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">nba2</a>
+            </li>
+            <li class="nba tomorrow">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">nba3</a>
+            </li>
+            <li class="soccer tomorrow">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">soccer1</a>
+            </li>
+            <li class="soccer tomorrow">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">soccer2</a>
+            </li>
+            <li class="soccer tomorrow">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">soccer3</a>
+            </li>
+            <li class="other tomorrow">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">others1</a>
+            </li>
+            <li class="other tomorrow">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">others2</a>
+            </li>
+            <li class="other tomorrow">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">others3</a>
+            </li>
+            <li class="game tomorrow">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">E-game1</a>
+            </li>
+            <li class="game tomorrow">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">E-game2</a>
+            </li>
+            <li class="game tomorrow">
+                <a href="#" data-rel="dialog" data-transition="fade"><img src="..." alt="nba1" class="newsImageSettings">E-game3</a>
+            </li>       
+    </div>
+     <div data-role="footer" data-theme="b" data-position="fixed">
+        <div data-role="navbar" data-iconpos="left">
+           <ul>
+               <li><a href="" data-icon="home" id="nbaBtn">nba</a></li>
+               <li><a href="" data-icon="info" id="soccerBtn">soccer</a></li>
+               <li><a href="" data-icon="search" id="othersBtn">others</a></li>
+               <li><a href="" data-icon="star" id="gameBtn">E-game</a></li>
+           </ul>
+        </div>
+        <h1>footer</h1>
+    </div>
+</div>
+
+<!--newsNba-->
+    <div data-role="page" id="newsNba">
+        <div data-role="content" class="dialogSettings" data-inset="true">
+            <h3 class="newsTitle">Title</h3>
+            <img src="" alt="newsNba" class="newsDialogImageSettings">
+            <br /><br />
+            <div class="ui-bar ui-bar-a">
+                <p>content</p>
+            </div>
+            <a href="#" data-role="button" class="backBtnSettings" data-rel="back">Back</a>
+        </div>
+    </div>
+
+    
+</body>
+<Script>
+
+//change text color script
+$("a[data-rel='dialog']").click(function(){
+    //console.log("clicked!");
+    if($(this).css("color") != "#0404B4"){
+        $(this).css("color","#0404B4");
+    }
+    if($(this).parent("li").css("border-color") !="#81F781"){
+        $(this).parent("li").css("border","2px solid #81F781");
+        //console.log($(this).parent("li").css("border-color"));
+    }
+});
+
+$("li.collapsibleSettings").click(function(){
+    console.log($(this).css("margin-left"));
+    console.log($(this).children("h1").css("margin"));
+    console.log("clicked!");
+});
+$("#panelGame-1").click(function(){
+    $(this).hide();
+    console.log("hide!");
+});
+
+$("#test").children().children().children("button").click(function(){
+   $("#test").children().children().children("button").css("border-color","red");
+   console.log( $("#test").children().children().children("button").css("background-color"));
+});
+
+//nbaBtn click event
+$("#nbaBtn").click(function(){
+    console.log("nbaBtn is clicked!");
+        $(".yesterday,.today,.tomorrow").show();
+        $(".nba").show();
+        $(".soccer,.other,.game").hide();
+   /* if($(this).data("clicked")== true){
+        $(this).data("clicked",false);
+        //console.log("clicked is false");
+        $(".yesterday,.today,.tomorrow").show();
+        $(".nba").show();
+        $(".soccer,.other,.game").show();
+    }else{
+        $(this).data("clicked",true);
+        //console.log("clicked is true");
+        $(".yesterday,.today,.tomorrow").show();
+        $(".nba").show();
+        $(".soccer,.other,.game").hide();
+    }  */ 
+});
+//soccerBtn click event
+$("#soccerBtn").click(function(){
+    console.log("soccerBtn is clicked!");
+        $(".yesterday,.today,.tomorrow").show();
+        $(".soccer").show();
+        $(".nba,.other,.game").hide();
+});
+//otherBtn click event
+$("#othersBtn").click(function(){
+    console.log("othersBtn is clicked!");
+        $(".yesterday,.today,.tomorrow").show();
+        $(".other").show();
+        $(".soccer,.nba,.game").hide();
+});
+//gameBtn click event
+$("#gameBtn").click(function(){
+    console.log("gameBtn is clicked!");
+        $(".yesterday,.today,.tomorrow").show();
+        $(".game").show();
+        $(".soccer,.nba,.other").hide();
+});
+
+//date picker btn 
+$("#datePicker").change(function(){
+    console.log("dateYesterdayOption is clicked!");
+    console.log($(this).val());
+    if($(this).val() == "Yesterday"){
+         $(".yesterday").show();
+         $(".today,.tomorrow").hide();
+    }else if($(this).val() == "Today"){
+         $(".today").show();
+         $(".yesterday,.tomorrow").hide();
+    }else{
+         $(".tomorrow").show();
+         $(".yesterday,.today").hide();
+    }
+});
+
+//searchListView click event
+$("#searchListView").children("li").click(function(){
+    console.log("search li is clicked!");
+    if(!$(this).next("").is(":visible")){
+        $(this).next("").show();
+        console.log("ul is showed!");
+    }else{
+        $(this).next("").hide();
+        console.log("ul is hidden!");
+    }
+});
+
+//change star color when clicked
+$("#game a.gameIconSettings").click(function(){
+    console.log("star is clicked!");
+    console.log($(this).css("background-color"));
+    if($(this).css("background-color") != "gold"){
+        $(this).css("background-color","gold");
+        var starContentHTML = "zcc!";
+        $("#starPageContent").append(starContentHTML);
+    }else{
+        $(this).css("background-color","#rgb(237, 237, 237)");
+         var starContentHTML = "zcc!";
+        $("#starPageContent").append(starContentHTML);
+    }
+    
+});
+
+
+
+
+</script>
+</html>

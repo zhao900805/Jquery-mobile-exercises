@@ -1,0 +1,142 @@
+<!DOCTYPE　html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+<!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- Include the jQuery library -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css.css">
+<link rel="import" href="./info.html">
+<Style>
+*{
+    font-size: 20%;
+}
+</style>
+</head>
+<body>
+<div data-role="page" id="forumsubpage">
+    <div data-role ="header" data-theme="b" data-position="fixed" style="height:5%"> 
+       <h1 class="ui-title" role="heading">Forum</h1>
+       <a href="#" class="ui-btn-right ui-btn-mini ui-corner-all" style="height:20%">only Writter</a>
+       <a href="#" data-icon="back" class="ui-btn-left ui-corner-all ui-mini ui-btn-inline" data-rel="back" style="height:20%">Back</a>
+    </div>
+    <div data-role="content" class="ui-content" data-mini="true">
+        <form class="forumsubpageSearch">
+            <input id="forumsubpageList" data-type="search">
+            <hr />
+        </form>
+            <ul data-filte="true" data-input="#forumsubpageList" data-role="listview">
+                <h1 class="forumsubpageTitle">&nbsp the title is here of this subpage:</h1>
+                <p><span class="forumsubpageTime">posted time</span>
+                   <span class="forumsubpageChannelName">channel name</span>
+                </p> 
+                <div class="ui-bar ui-bar-a" style="height:100px;">
+                    <p>the content of ths subpagew will be shown here!
+                    </p>
+                    <a href="" class="ui-btn ui-icon-star ui-mini ui-corner-all ui-btn-notext ui-btn-inline likeBTnSettings" id="likeBtn">Like</a>
+                </div>
+                <Div style="margin-top:1%;margin-bottom:1%;background-color:#FFFFFF;">
+                    <span style="color:red;margin-left:4%;">most liked commends:</span>
+                </div>
+                <li>
+                    <img src="" alt="photo" class="userPhoto">
+                    <span class="userNameSettings">userName</span><br />
+                    <span class="commendsPTSettings">Position&nbsp Time</span>
+                    <textarea class="commendsContentSettings">The commends content is here:
+                    </textarea>
+                </li>
+                <li>
+                    <img src="" alt="photo" class="userPhoto">
+                    <span class="userNameSettings">userName</span><br />
+                    <span class="commendsPTSettings">Position&nbsp Time</span><br />
+                    <textarea class="commendsContentSettings">The commends content is here:
+                    </textarea>
+                </li>
+                <li>
+                    <img src="" alt="photo" class="userPhoto">
+                    <span class="userNameSettings">userName</span><br />
+                    <span class="commendsPTSettings">Position&nbsp Time</span>
+                    <textarea class="commendsContentSettings">The commends content is here:
+                    </textarea>
+                </li>
+                <li>
+                    <img src="" alt="photo" class="userPhoto">
+                    <span class="userNameSettings">userName</span><br />
+                    <span class="commendsPTSettings">Position&nbsp Time</span>
+                    <textarea class="commendsContentSettings">The commends content is here:
+                    </textarea>
+                </li>
+                <Div style="margin-top:1%;margin-bottom:1%;background-color:#FFFFFF">
+                    <span style="color:red;margin-left:4%;">most posted commends:</span>
+                </div>
+                <li><img src="" alt="photo" class="userPhoto">
+                    <span class="userNameSettings">userName</span><br />
+                    <span class="commendsPTSettings">Position&nbsp Time</span>
+                    <textarea class="commendsContentSettings">The commends content is here:
+                    </textarea>
+                    </li>
+                <li>
+                    <img src="" alt="photo" class="userPhoto">
+                    <span class="userNameSettings">userName</span><br />
+                    <span class="commendsPTSettings">Position&nbsp Time</span>
+                    <textarea class="commendsContentSettings">The commends content is here:
+                    </textarea>
+                </li>
+                <li>
+                    <img src="" alt="photo" class="userPhoto">
+                    <span class="userNameSettings">userName</span><br />
+                    <span class="commendsPTSettings">Position&nbsp Time</span>
+                    <textarea class="commendsContentSettings">The commends content is here:
+                    </textarea>
+                </li>
+                <li>
+                    <img src="" alt="photo" class="userPhoto">
+                    <span class="userNameSettings">userName</span><br />
+                    <span class="commendsPTSettings">Position&nbsp Time</span>
+                    <textarea class="commendsContentSettings">The commends content is here:
+                    </textarea>
+                </li>
+            </ul>
+    </div>
+    <div data-role="footer" data-theme="b" data-position="fixed" style="height:5%;">
+        <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-btn-left ui-mini" style="margin-top:0%;">No text</a>
+        <a href="#" class="ui-btn ui-mini" style="margin-left:28%;margin-top:1%;">
+            last page
+        </a>
+        <a href="#" class="ui-btn ui-mini" style="margin-top:1%;">
+            next page
+        </a>
+        <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-btn-right ui-mini" style="margin-top:0%;">No text</a>
+    </div>
+</div>
+</body>
+<Script>
+$(document).ready(function(){
+    console.log($("#likeBtn").css("background-color"));//246,246,246
+    console.log($("#likeBtn").css("background"));//246,246,246
+    console.log($("#likeBtn").css("color"));//51,51,51
+});
+//like btn event
+$("#likeBtn").click(function(){
+    console.log("likeBtn is clicked!");
+    if($(this).css("background-color") =="rgb(255, 215, 0)"){
+        $(this).css("background-color","rgb(246,246,246)");
+        console.log("no");
+    }else{
+        $(this).css("background-color","gold");
+        console.log($(this).css("background-color"));
+    }
+});
+</script>
+</html>
