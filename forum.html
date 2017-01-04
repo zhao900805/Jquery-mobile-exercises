@@ -1,0 +1,702 @@
+<!DOCTYPE　html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+<!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- Include the jQuery library -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css.css">
+<link rel="import" href="./info.html">
+<Style>
+*{
+    font-size: 20%;
+}
+</style>
+</head>
+<body>
+<div data-role="page" id="forum" data-position="fixed">
+    <div data-role ="header" data-theme="c"> 
+       <h1 class="ui-title" role="heading">Forum</h1>
+       <a href="#" data-icon="search" class="ui-btn-right ui-btn-mini ui-corner-all" style="height:20%">search</a>
+       <a href="#" data-icon="back" class="ui-btn-left ui-corner-all ui-mini ui-btn-inline" data-rel="back" style="height:20%">Back</a>
+    </div>
+    <div data-role="content" class="ui-content" data-mini="true">
+        <div class="ui-grid-a" style="margin-top:-4%;margin-bottom:-4%;margin-left:0%;" data-mini="true">
+            <div class="ui-block-a">
+                <a href="./frame.html" class="ui-btn-inline ui-btn" style=" width:50%;height:10px;margin-left:40%;font-size:20%" id="frameBtn">Frame</a>
+            </div>
+            <div class="ui-block-b">
+                <a href="./recommand.html" class="ui-btn-inline ui-btn" style="width:50%;height:10px;margin-right:40%;font-size:20%;" id="recBtn">Recommand</a>
+            </div>
+            <hr />
+        </div>
+        <div class="ui-grid-a" style="margin-left:-7px;margin-top:12px;">
+            <div class="ui-block-a">
+                <div data-role="controlgroup" data-mini="true" data-type="vertical" style="width:60%;height:400px;margin-left:0px;">
+                    <a href="" class=" ui-btn ui-corner-all" id="nbaTeam">nba Team</a>
+                    <a href="" class=" ui-btn ui-corner-all" id="nbaPlayer">nba Player</a>
+                    <a href="" class=" ui-btn ui-corner-all" id="soccerTeam">Soccer Team</a>
+                    <a href="" class=" ui-btn ui-corner-all" id="soccerPlayer">Soccer Player</a>
+                    <a href="" class=" ui-btn ui-corner-all" id="e-game">e-game</a>
+                    <a href="" class=" ui-btn ui-corner-all" id="Others">Others</a>
+                </div>
+            </div>
+            <!--nbaTeamImg-->
+            <div class="ui-block-b forumBlockSettings" id="nbaTeamImg">
+                 <h5 class="forumUiBlockSettings">main</h5>
+                 <hr style="width:400px"/>
+                 <div class="ui-grid-b forumGridSettings">
+                    <div class="ui-block-a">
+                        <a href="./Forummainpage.html">
+                            <img src=".." alt="a1" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <hr />
+                    <div class="ui-block-a">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-a">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                 </div>
+            </div>
+            <!--nbaPlayerImg-->
+            <div class="ui-block-b forumBlockSettings" id="nbaPlayerImg">
+                 <h5 class="forumUiBlockSettings">main</h5>
+                 <hr style="width:400px"/>
+                 <div class="ui-grid-b forumGridSettings">
+                    <div class="ui-block-a">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <hr />
+                    <div class="ui-block-a">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-a">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                 </div>
+            </div>
+            <!--soccerTeamImg-->
+            <div class="ui-block-b forumBlockSettings" id="soccerTeamImg">
+                 <h5 class="forumUiBlockSettings">main</h5>
+                 <hr style="width:400px"/>
+                 <div class="ui-grid-b forumGridSettings">
+                    <div class="ui-block-a">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <hr />
+                    <div class="ui-block-a">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-a">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                 </div>
+            </div>
+            <!--soccerPlayerImg-->
+            <div class="ui-block-b forumBlockSettings" id="soccerPlayerImg">
+                 <h5 class="forumUiBlockSettings">main</h5>
+                 <hr style="width:400px"/>
+                 <div class="ui-grid-b forumGridSettings">
+                    <div class="ui-block-a">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <hr />
+                    <div class="ui-block-a">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-a">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                 </div>
+            </div>
+            <!--e-gameImg-->
+            <div class="ui-block-b forumBlockSettings" id="e-gameImg">
+                 <h5 class="forumUiBlockSettings">main</h5>
+                 <hr style="width:400px"/>
+                 <div class="ui-grid-b forumGridSettings">
+                    <div class="ui-block-a">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <hr />
+                    <div class="ui-block-a">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-a">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                 </div>
+            </div>
+            <!--OthersImg-->
+            <div class="ui-block-b forumBlockSettings" id="OthersImg">
+                 <h5 class="forumUiBlockSettings">main</h5>
+                 <hr style="width:400px"/>
+                 <div class="ui-grid-b forumGridSettings">
+                    <div class="ui-block-a">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <hr />
+                    <div class="ui-block-a">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-a">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <a href="#">
+                            <img src=".." alt="b" class="forumImgSettings">
+                        </a>
+                        <p class="forumWordsSettings">a</p>
+                    </div>
+                 </div>
+            </div>
+        
+        
+    </div>
+    <div data-role="footer" data-theme="a" data-position="fixed">
+        <div data-role="navbar" data-iconpos="left">
+           <ul>
+               <li><a href="#home" data-icon="home">home</a></li>
+               <li><a href="" data-icon="info">info</a></li>
+               <li><a href="#forumSearchDialog" data-icon="search">search</a></li>
+               <li><a href="" data-icon="star">star</a></li>
+               <li><a href="" data-icon="user">user</a></li>
+           </ul>
+       </div>
+    </div>
+</div>
+
+<div data-role="page" id="home">
+  <Div data-role="head">
+  </div>
+  <div data-role="content" >
+  </div>
+  <div data-role="footer">
+  </div>
+</div>
+
+<!--forumSearchDialog-->
+<div data-role="page" id="forumSearchDialog">
+    <div data-role="head">
+        <h1 class="newsTitle">searchPage</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true" id="searchListView">
+            <li><a href="">Search FreindList</a></li>
+            <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search FreindList" data-inset="true">
+                <li>
+                    <a href="">a</a>
+                </li>
+                <li>
+                    <a href="">b</a>
+                </li>
+            </ul>
+            <li><a href="">Search Viewd News</a></li>
+            <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search Viewd News" data-inset="true">
+                <li>
+                    <a href="">a</a>
+                </li>
+                <li>
+                    <a href="">b</a>
+                </li>
+            </ul>
+            <li><a href="">Search Teams</a></li>
+            <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search Teams" data-inset="true">
+                <li>
+                    <a href="">a</a>
+                </li>
+                <li>
+                    <a href="">b</a>
+                </li>
+            </ul>
+            <li><a href="">Search Players</a></li>
+            <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search Players" data-inset="true">
+                <li>
+                    <a href="">a</a>
+                </li>
+                <li>
+                    <a href="">b</a>
+                </li>
+            </ul>
+            <li><a href="">Search Message</a></li>
+            <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search Message" data-inset="true">
+                <li>
+                    <a href="">a</a>
+                </li>
+                <li>
+                    <a href="">b</a>
+                </li>
+            </ul>
+            <li><a href="">Search Keywords</a></li>
+            <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search Keywords" data-inset="true">
+                <li>
+                    <a href="">a</a>
+                </li>
+                <li>
+                    <a href="">b</a>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <div data-role="footer">
+        <a href="#" data-role="button" style="margin-top:10px;margin-left:400px;" data-rel="back">Back</a>
+    </div>
+</div>
+
+
+<div data-role="page" id="recommand" data-position="fixed">
+    <div data-role ="header" data-theme="c"> 
+       <h1 class="ui-title" role="heading">Forum</h1>
+       <a href="#" data-icon="search" class="ui-btn-right ui-btn-mini ui-corner-all" style="height:20%">search</a>
+       <a href="#" data-icon="back" class="ui-btn-left ui-corner-all ui-mini ui-btn-inline" data-rel="back" style="height:20%">Back</a>
+    </div>
+    <div data-role="content" class="ui-content" data-mini="true">
+        <div class="ui-grid-a" style="margin-top:-4%;margin-bottom:-4%;margin-left:0%;" data-mini="true">
+            <div class="ui-block-a">
+                <a href="./frame.html" class="ui-btn-inline ui-btn" style=" width:50%;height:10px;margin-left:40%;font-size:20%">Frame</a>
+            </div>
+            <div class="ui-block-b">
+                <a href="./recommand.html" class="ui-btn-inline ui-btn" style="width:50%;height:10px;margin-right:40%;font-size:20%;">Recommand</a>
+            </div>
+            <hr />
+        </div>
+        <ul data-role="listview" style="margin-top:2%;margin-bottom:2%;">
+            <li>your favourite forum will be shown below</li>
+        </ul>
+        <ul data-role="listview" >
+            <li class="recommandList"><a href="./Forumsubpage.html">
+                <Div data-role="controlgroup" data-type="horizontal">
+                    <img src="" alt="photo-1"  class="recommandImgSettings">
+                    <span class="recommandHeadSettings">photo-1</span><br />
+                </div>
+                <Div data-role="controlgroup" data-type="vertical">
+                <span class="recommandParagrahpSettings">Photo-1's main content is here</span><br />
+                <span class="recommandWritterpSettings">writter</span>
+                </div>
+                </a>
+            </li>
+            <li class="recommandList"><a href="">
+                <Div data-role="controlgroup" data-type="horizontal">
+                    <img src="" alt="photo-1"  class="recommandImgSettings">
+                    <span class="recommandHeadSettings">photo-1</span><br />
+                </div>
+                <Div data-role="controlgroup" data-type="vertical">
+                <span class="recommandParagrahpSettings">Photo-1's main content is here</span><br />
+                <span class="recommandWritterpSettings">writter</span>
+                </div>
+                </a>
+            </li>
+            <li class="recommandList"><a href="">
+                <Div data-role="controlgroup" data-type="horizontal">
+                    <img src="" alt="photo-1"  class="recommandImgSettings">
+                    <span class="recommandHeadSettings">photo-1</span><br />
+                </div>
+                <Div data-role="controlgroup" data-type="vertical">
+                <span class="recommandParagrahpSettings">Photo-1's main content is here</span><br />
+                <span class="recommandWritterpSettings">writter</span>
+                </div>
+                </a>
+            </li>
+            <li class="recommandList"><a href="">
+                <Div data-role="controlgroup" data-type="horizontal">
+                    <img src="" alt="photo-1"  class="recommandImgSettings">
+                    <span class="recommandHeadSettings">photo-1</span><br />
+                </div>
+                <Div data-role="controlgroup" data-type="vertical">
+                <span class="recommandParagrahpSettings">Photo-1's main content is here</span><br />
+                <span class="recommandWritterpSettings">writter</span>
+                </div>
+                </a>
+            </li>
+            <li class="recommandList"><a href="">
+                <Div data-role="controlgroup" data-type="horizontal">
+                    <img src="" alt="photo-1"  class="recommandImgSettings">
+                    <span class="recommandHeadSettings">photo-1</span><br />
+                </div>
+                <Div data-role="controlgroup" data-type="vertical">
+                <span class="recommandParagrahpSettings">Photo-1's main content is here</span><br />
+                <span class="recommandWritterpSettings">writter</span>
+                </div>
+                </a>
+            </li>
+            <li class="recommandList"><a href="">
+                <Div data-role="controlgroup" data-type="horizontal">
+                    <img src="" alt="photo-1"  class="recommandImgSettings">
+                    <span class="recommandHeadSettings">photo-1</span><br />
+                </div>
+                <Div data-role="controlgroup" data-type="vertical">
+                <span class="recommandParagrahpSettings">Photo-1's main content is here</span><br />
+                <span class="recommandWritterpSettings">writter</span>
+                </div>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+     <div data-role="footer" data-theme="a" data-position="fixed">
+        <div data-role="navbar" data-iconpos="left">
+           <ul>
+               <li><a href="#home" data-icon="home">home</a></li>
+               <li><a href="" data-icon="info">info</a></li>
+               <li><a href="#forumSearchDialog" data-icon="search">search</a></li>
+               <li><a href="" data-icon="star">star</a></li>
+               <li><a href="" data-icon="user">user</a></li>
+           </ul>
+       </div>
+    </div>
+</div>
+
+</body>
+<Script>
+//ready event
+$("#forum").on("pagecreate",function(){
+    $("#nbaTeamImg").show();
+    $("#nbaPlayerImg,#soccerTeamImg,#soccerPlayerImg,#e-gameImg,#OthersImg").hide();
+    console.log($("#nbaTeam").siblings().length);
+});
+//nbaTeam click event
+$("#nbaTeam").click(function(){
+    console.log("nbaTeam is clicked!");
+    $("#nbaTeamImg").show();
+    $("#nbaTeamImg").siblings(".ui-block-b").hide();
+});
+//nbaPlayer click event
+$("#nbaPlayer").click(function(){
+    console.log("nbaPlayer is clicked!");
+    $("#nbaPlayerImg").show();
+    $("#nbaPlayerImg").siblings(".ui-block-b").hide();
+});
+//soccerTeam click event
+$("#soccerTeam").click(function(){
+    console.log("soccerTeam is clicked!");
+    $("#soccerTeamImg").show();
+    $("#soccerTeamImg").siblings(".ui-block-b").hide();
+});
+//soccerPlayer click event
+$("#soccerPlayer").click(function(){
+    console.log("soccerPlayer is clicked!");
+    $("#soccerPlayerImg").show();
+    $("#soccerPlayerImg").siblings(".ui-block-b").hide();
+});
+//e-game click event
+$("#e-game").click(function(){
+    console.log("e-game is clicked!");
+    $("#e-gameImg").show();
+    $("#e-gameImg").siblings(".ui-block-b").hide();
+});
+//Others click function
+$("#Others").click(function(){
+    console.log("Others is clicked!");
+    $("#OthersImg").show();
+    $("#OthersImg").siblings(".ui-block-b").hide();
+});
+
+//btn change color when swipe
+$("#forum").on("swiperight",function(){
+    console.log("swiperight!");
+    $("#recommand").show();
+    $("#frameBtn").addClass("changeColor");
+    $("#recBtn").removeClass("changeColor");
+    console.log($("#frameBtn").css("background"));
+    console.log($("#frameBtn").css("background-color"));
+    //$("#forum").hide();
+    //$("#forum").hide();
+});
+$("#recommand").on("swipeleft",function(){
+    console.log("swipeleft!");
+    $("#recommand").hide();
+    $("#frameBtn").removeClass("changeColor");
+    $("#recBtn").addClass("changeColor");
+    $("#forum").show();
+    //$("#forum").show();
+});
+
+//click on li change color
+$(".recommandList").click(function(){
+    console.log("recommandList is clicked!");
+    if(!$(this).hasClass("changeBorderColor")){
+        $(this).addClass("changeBorderColor");
+        console.log("add changeBorderColor!");
+    }
+    if($(this).siblings("li").hasClass("changeBorderColor")){
+       $(this).siblings("li").removeClass("changeBorderColor");
+       console.log("remove changeBorderColor");
+    }
+});
+
+</script>
+</html>
